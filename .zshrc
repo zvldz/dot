@@ -53,7 +53,7 @@ HIST_STAMPS="yyyy-mm-dd"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(history-substring-search colored-man-pages git svn httpie command-not-found dircycle catimg encode64 zsh_reload systemd)
+plugins=(history-substring-search colored-man-pages git httpie command-not-found dircycle encode64 systemd zsh-interactive-cd)
 
 # dircycle - Ctrl+Shift+Left/Right
 
@@ -127,7 +127,7 @@ fi
 
 #alias reload='source ~/.zshrc'
 # zsh_reload
-alias reload='src'
+alias reload='omz reload'
 alias vimrc='vim ~/.vimrc'
 alias zshrc='vim ~/.zshrc'
 alias cshrc='vim ~/.cshrc'
