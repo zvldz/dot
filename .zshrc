@@ -155,6 +155,7 @@ then
     alias cvs='grc --colour=auto cvs'
 #   alias netstat='grc --colour=auto netstat'
     alias ifconfig='grc --colour=auto ifconfig'
+    alias ip='grc --colour=auto ip'
 #   alias ps='grc --colour=auto ps'
     alias mtr='grc --colour=auto mtr'
     alias mount='grc --colour=auto mount'
