@@ -269,9 +269,7 @@ if ( `where zoxide` != "" ) then
     endif
     if ( -f ~/.zoxide.tcsh ) then
         source ~/.zoxide.tcsh
-        alias precmd '__zoxide_hook'
-        # Replace cd with zoxide
-        alias cd 'z'
+        alias zcd 'z'
         if ( `where  fzf` != "" ) then
             alias cdi 'zi'
         endif

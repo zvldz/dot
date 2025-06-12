@@ -322,6 +322,7 @@ if command -v zoxide >/dev/null; then
             return 1
         fi
     }
+    alias zcd='z'
     # Interactive zoxide navigation
     alias cdi='zi'
     # Exclude temporary and mounted directories
