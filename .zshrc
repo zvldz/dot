@@ -26,6 +26,7 @@ plugins=(git history-substring-search colored-man-pages command-not-found system
 # Install oh-my-zsh if not present and restart zsh
 if [[ ! -d "$ZSH" ]]; then
     echo "Installing oh-my-zsh..."
+    mkdir -p $ZSH
     # Create backup of existing .zshrc
     if [[ -f ~/.zshrc ]]; then
         cp ~/.zshrc ~/.zshrc.backup-$(date '+%Y%m%d_%H%M%S')
