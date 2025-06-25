@@ -9,9 +9,11 @@ alias vim       vim -p
 alias 7ze       7za a -mhe=on -p
 
 alias tcpdump   tcpdump -nn
-alias trafshow  trafshow -n
-alias iftop     TERM=rxvt-unicode-256color iftop -nN
+alias trafshow  env TERM=rxvt-unicode-256color trafshow -n
+alias iftop     env TERM=rxvt-unicode-256color iftop -nN
+alias bmon      env TERM=rxvt-unicode-256color bmon
 alias tshark    tshark -n
+alias jlog      'journalctl -xe'
 
 if ($OSTYPE == 'FreeBSD') then
     alias ls    ls -A

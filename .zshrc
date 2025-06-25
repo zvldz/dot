@@ -138,11 +138,15 @@ alias 7ze='7za a -mhe=on -p'
 # TCP dump without name resolution
 alias tcpdump='tcpdump -nn'
 # Network traffic monitor
-alias trafshow='trafshow -n'
+alias trafshow='TERM=rxvt-unicode-256color trafshow -n'
 # Interface traffic monitor
 alias iftop='TERM=rxvt-unicode-256color iftop -nN'
+# bmon traffic monitor
+alias bmon='TERM=rxvt-unicode-256color bmon'
 # Packet analyzer
 alias tshark='tshark -n'
+# Show systemd journal
+alias jlog='journalctl -xe'
 
 # System Tools
 # View system logs
