@@ -26,7 +26,6 @@ plugins=(git history-substring-search colored-man-pages command-not-found system
 # Install oh-my-zsh if not present and restart zsh
 if [[ ! -d "$ZSH" ]]; then
     echo "Installing oh-my-zsh..."
-    mkdir -p $ZSH
     # Create backup of existing .zshrc
     if [[ -f ~/.zshrc ]]; then
         cp ~/.zshrc ~/.zshrc.backup-$(date '+%Y%m%d_%H%M%S')
@@ -238,6 +237,7 @@ update_zsh_plugins() {
     local temp_dir="/tmp/zsh-plugins"
     local plugin_dir plugin_name repo_url output
     mkdir -p "$temp_dir"
+    mkdir -p ~/.zsh
     for plugin in "${plugins[@]}"; do
         plugin_name=${plugin%% *}
         repo_url=${plugin#* }
