@@ -173,17 +173,19 @@ if command -v grc &> /dev/null; then
     alias ld='grc --colour=auto ld'
     alias ping='grc --colour=auto ping'
     alias traceroute='grc --colour=auto traceroute'
-    alias mtr='grc --colour=auto mtr'
+    #alias mtr='grc --colour=auto mtr'
     alias dig='grc --colour=auto dig'
+    alias ifconfig='grc --colour=auto ifconfig'
+    alias ip='grc --colour=auto ip'
     alias mount='grc --colour=auto mount'
     alias df='grc --colour=auto df'
     alias ps='grc --colour=auto ps'
     alias netstat='grc --colour=auto netstat'
     alias head='grc --colour=auto head'
     alias tail='grc --colour=auto tail'
-    alias la='grc --colour=auto ls -a'
-    alias lf='grc --colour=auto ls -FA'
-    alias ll='grc --colour=auto ls -lA'
+    alias la='ls --color=auto -a'
+    alias lf='ls --color=auto -FA'
+    alias ll='ls --color=auto -lA'
 fi
 
 # tmux completion
